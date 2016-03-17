@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.asus.myapplication.AddSchedule"
+    android:background="#1c2c57">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Schedule:"
+        android:id="@+id/textView7"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course ID:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtID"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_task"
+        android:layout_below="@+id/edtID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/textView13" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_quiz"
+            android:text="@string/quiz"
+            android:onClick="selectTask"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_asnmnt"
+            android:text="@string/asnmnt"
+            android:onClick="selectTask"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_mid"
+            android:text="@string/mid"
+            android:onClick="selectTask"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_nocls"
+            android:text="@string/noclass"
+            android:onClick="selectTask"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_Chapters"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Tasks:"
+        android:id="@+id/textTask"
+        android:layout_below="@+id/btnDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter1"
+        android:text="@string/chapter1"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="selectChapter"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter2"
+        android:text="@string/chapter2"
+        android:layout_below="@+id/chapter1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="selectChapter"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter3"
+        android:text="@string/chapter3"
+        android:onClick="selectChapter"
+        android:layout_alignTop="@+id/chapter1"
+        android:layout_toRightOf="@+id/chapter1"
+        android:layout_toEndOf="@+id/chapter1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter4"
+        android:text="@string/chapter4"
+        android:onClick="selectChapter"
+        android:layout_below="@+id/chapter1"
+        android:layout_toRightOf="@+id/chapter1"
+        android:layout_toEndOf="@+id/chapter1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter5"
+        android:text="@string/chapter5"
+        android:onClick="selectChapter"
+        android:layout_alignTop="@+id/chapter3"
+        android:layout_toRightOf="@+id/chapter3"
+        android:layout_toEndOf="@+id/chapter3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:onClick="finalsubmit"
+        android:layout_below="@+id/textView15"
+        android:layout_toRightOf="@+id/chapter5"
+        android:layout_toEndOf="@+id/chapter5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textChapters"
+        android:layout_below="@+id/textTask"
+        android:layout_alignLeft="@+id/textTask"
+        android:layout_alignStart="@+id/textTask" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:id="@+id/btnDate"
+        android:layout_below="@+id/chapter2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textChapters"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView16"
+        android:layout_alignTop="@+id/btnSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

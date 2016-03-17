@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#1c2c57">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:id="@+id/buttonlogin"
+        android:onClick="adminlog"
+
+        android:layout_above="@+id/buttonreg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:id="@+id/buttonreg"
+        android:onClick="adminregister"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coordinator Log In and Registration"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/buttonlogin"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.asus.myapplication.C_Clogin"
+    android:background="#5e9fa6">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Matric ID"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtID"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="25dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/edtID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtpass"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="studentLogin"
+        android:layout_below="@+id/edtpass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button4"
+        android:onClick="registerOnclick"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

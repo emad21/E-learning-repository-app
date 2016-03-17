@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_c__clogin">C_Clogin</string>
+    <string name="title_activity_c__cregister">C_Cregister</string>
+    <string name="title_activity_student_login">Student_login</string>
+    <string name="title_activity_student_register">Student_register</string>
+    <string name="title_activity_conductor_home">ConductorHome</string>
+    <string name="title_activity_add_schedule">AddSchedule</string>
+    <string name="title_task">Select Task:</string>
+    <string name="quiz">Quiz</string>
+    <string name="asnmnt">Assignment</string>
+    <string name="mid">Midterm</string>
+    <string name="noclass">No Class</string>
+    <string name="mbt1">Button</string>
+    <string name="title_Chapters">Chapters:</string>
+    <string name="chapter1">Chapter1</string>
+    <string name="chapter2">Chapter2</string>
+    <string name="chapter3">Chapter3</string>
+    <string name="chapter4">Chapter4</string>
+    <string name="chapter5">Chapter5</string>
+    <string name="title_activity_student_view">StudentView</string>
+    <string name="title_activity_send_email">SendEmail</string>
+
+</resources>

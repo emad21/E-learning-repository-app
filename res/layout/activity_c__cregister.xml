@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.asus.myapplication.C_Cregister"
+    android:background="#1c2c57">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff Id."
+        android:textSize="15dp"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/etstaffid"
+
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course ID."
+        android:textSize="15dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/etstaffid"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcourseid"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Email:"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/etcourseid"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etstaffemail"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:textSize="15dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/etstaffemail"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etpassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnreg"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/etpassword"
+        android:layout_alignParentLeft="true"
+        android:onClick="adminReg"/>
+</RelativeLayout>
